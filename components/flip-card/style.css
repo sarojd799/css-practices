@@ -1,0 +1,152 @@
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 15rem;
+        height: 9rem;
+        background-color: transparent;
+        perspective: 1000px;
+        font-family: sans-serif;
+    }
+
+    .flip-card-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .container:hover .flip-card-container {
+        transform: rotateY(180deg);
+    }
+    .flip-card-front {
+        background-color: #284b55;
+        color:white;
+        height: 100%;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    .card-name img {
+        height:35px;
+        width:auto;
+    }
+
+    .visa-label {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .card-name {
+        position: absolute;
+        right:15px;
+        top:15px;
+    }
+    .name {
+        position: absolute;
+        left: 30px;
+        bottom: 25px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .card-type {
+        position: absolute;
+        right: 15px;
+        top: 60px;
+        font-size: 10px;
+    }
+    .card-num {
+        position: absolute;
+        top: 51%;
+        letter-spacing: 2px;
+        font-size: 24px;
+        word-spacing: 10px;
+        left:30px;
+    }
+    .v-from-label {
+        position: absolute;
+        bottom: 29%;
+        font-size: 7px;
+        left: 35%;
+    }
+    .v-from-date {
+        position: absolute;
+        bottom: 21%;
+        font-size: 13px;
+        left: 30%;
+    }
+     .v-to-date {
+        position: absolute;
+        bottom: 21%;
+        font-size: 13px;
+        left: 46%;
+    }
+    .v-till-label {
+        position: absolute;
+        bottom: 29%;
+        font-size: 7px;
+        left: 50%;
+    }
+    .flip-card-back {
+        background-color: #284b55;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 12px;
+    }
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .magnetic-tape{
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        top:10%;
+        background-color: black;
+    }
+    .white-strip-back {
+        position: absolute;
+        top: 38%;
+        width: 60%;
+        height: 1.4rem;
+        background-color: white;
+        left: 6%;
+    }
+    .atm-chip {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        border-radius: 50px;
+    }
+    .atm-chip img {
+        height: 35px;
+        width: 50px;
+    }
+    .platinum {
+        font-size: 10px;
+        letter-spacing: 1px;
+        position: absolute;
+        right: 7%;
+        bottom: 7%;
+    }
