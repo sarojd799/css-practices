@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container {
+    padding: 4rem;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+}
