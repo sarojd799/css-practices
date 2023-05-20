@@ -47,3 +47,5 @@ The grid-area property can be used as a shorthand property for the
     .grid-container {
         grid-template-areas: 'myArea myArea myArea myArea myArea';
     }
+
+    https://css-tricks.com/snippets/css/complete-guide-grid/
