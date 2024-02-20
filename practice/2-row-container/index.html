@@ -11,7 +11,7 @@
 </head>
 
 <body ng-app="scrollTest" ng-controller="scrollController">
-    <div class="page-container">
+    <div class="page-container" ng-cloak>
 
         <p class="page-header">
             {{pageLabel}}
@@ -19,7 +19,7 @@
             <button class="btn" ng-click="addRecord()">ADD DRUG</button>
         </p>
 
-        <div class="scrollable__parent" scrollable-parent-container data="savedDrugs">
+        <div class="scrollable__parent" scrollable-parent-container data="savedDrugs" on-delete="onDelete($event)">
         </div>
     </div>
 </body>
