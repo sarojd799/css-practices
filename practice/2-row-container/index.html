@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="scrollTest" ng-controller="scrollController">
+    <div class="page-container">
+
+        <p class="page-header">
+            {{pageLabel}}
+
+            <button class="btn" ng-click="addRecord()">ADD DRUG</button>
+        </p>
+
+        <div class="scrollable__parent" scrollable-parent-container data="savedDrugs">
+        </div>
+    </div>
+</body>
+
+</html>
